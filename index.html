@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily News Feed</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Daily News</h1>
+        </header>
+        <main>
+            <div class="content-panel">
+                <h2 class="theme">AI & Tech</h2>
+                <p class="news-content">Loading AI-generated news...</p>
+                <span class="date">03/07/2025</span>
+            </div>
+            <div class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </main>
+        <nav class="taskbar">
+            <button data-category="ai-tech"><img src="ai-icon.svg" alt="AI & Tech"></button>
+            <button data-category="movies-culture"><img src="movie-icon.svg" alt="Movies & Culture"></button>
+            <button data-category="politics-economy"><img src="politics-icon.svg" alt="Politics & Economy"></button>
+            <button data-category="games"><img src="game-icon.svg" alt="Games"></button>
+        </nav>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
