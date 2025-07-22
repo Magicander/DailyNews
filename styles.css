@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: 'Yeseva One', serif;
+    background: #1a1a1a;
+    color: #f5e8c7;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+header {
+    background: #f4a261;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+.content-panel {
+    background: #2e2e2e;
+    padding: 20px;
+    border-radius: 20px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.theme {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #a3bffa;
+}
+
+.news-content {
+    font-size: 16px;
+    color: #f5e8c7;
+}
+
+.date {
+    font-size: 14px;
+    color: #a3bffa;
+    margin-top: 10px;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.dot.active {
+    background: #f94144;
+}
+
+.taskbar {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.taskbar button {
+    background: #a3bffa;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.taskbar button:hover {
+    background: #87ceeb;
+}
+
+.taskbar button img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 40px;
+    }
+
+    header {
+        width: 200px;
+        margin-right: 20px;
+    }
+
+    main {
+        width: 400px;
+        margin: 0;
+    }
+
+    .taskbar {
+        position: static;
+        transform: none;
+        margin-left: 20px;
+    }
+}
